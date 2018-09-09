@@ -5,3 +5,4 @@
 * 检查502
 * 找回mysql密码
 * fopensocket 发送http
+* steam fopen发送http
