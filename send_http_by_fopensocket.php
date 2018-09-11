@@ -61,23 +61,20 @@ $count=20000;
 $response=0;
 $error=0;
 
-for($i=0;$i<$count;$i++){
-    $client = new JsonRPC("192.168.0.12", 80);
-    $data[] =array(
-        'ip'=>getIpSegement($i),
-    );
-    $params['data']=$data;
-    $r = $client->Call("ip.add",$params);
-    if($r['result']['result']=='accepted'){
-        $response++;
-    }else{
-        $error++;
-    }
-    $data=[];
-    $client = null;
+$client = new JsonRPC("192.168.0.12", 80);
+$data =array(
+	'ip'=>getIpSegement($i),
+);
+$params['data']=$data;
+$method='method';
+$r = $client->Call($url,$method,$params);
+if($r['result']['info']=='accepted'){
+	$response++;
+}else{
+	$error++;
 }
-
-// var_export($r);
+$data=[];
+$client = null;
 echo '成功:'.$response.PHP_EOL;
 echo '失败:'.$error.PHP_EOL;
 var_export($r);
