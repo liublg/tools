@@ -11,7 +11,7 @@ do
     then
         first_time=1
 	fi
-    curl --silent "$i" -o  "recent_$md5_num.html"
+    curl --silent "$i" -o  "$WORK_PATH/recent_$md5_num.html"
 	if [ $first_time -ne 1 ];
 	then
 		lastfile="$WORK_PATH/last_$md5_num.html"
