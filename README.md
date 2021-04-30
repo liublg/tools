@@ -12,4 +12,5 @@
 * [codeception测试例子](./codeception_tests_acceptance.php)
 * [个人用phpstorm的配置文件](./phpstorm_config)
 * [githook](./git_hook_dep_web.sh)
-* [idea rest client 配置转curl](./idea_rest_client_to_curl.php)
+* [idea rest_client 配置 转 curl command](./idea_rest_client_to_curl.php)
+* [VUE一键打包上线](./auto_ssh_push_vue.sh)
