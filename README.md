@@ -12,3 +12,4 @@
 * [codeception测试例子](./codeception_tests_acceptance.php)
 * [个人用phpstorm的配置文件](./phpstorm_config)
 * [githook](./git_hook_dep_web.sh)
+* [idea rest client 配置转curl](./idea_rest_client_to_curl.php)
